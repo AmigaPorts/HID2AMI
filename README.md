@@ -17,14 +17,15 @@ Donors will be added to the "firmware beta release" channel, and will receive al
 
 
 
-![Image of HID2AMI-01](https://github.com/EmberHeavyIndustries/HID2AMI/blob/master/Pics/HID2AMI.v1.0.0-1-300.jpg) ![Image of HID2AMI-02](https://github.com/EmberHeavyIndustries/HID2AMI/blob/master/Pics/HID2AMI.v1.0.0-2-300.jpg)
+![Image of HID2AMI-01](https://github.com/EmberHeavyIndustries/HID2AMI/blob/master/Pics/HID2AMI.v1.0.0-1-300.jpg) ![Image of HID2AMI-02](https://github.com/EmberHeavyIndustries/HID2AMI/blob/master/Pics/HID2AMI.v1.0.0-2-300.jpg) ![Image of HID2AMI-02](https://github.com/EmberHeavyIndustries/HID2AMI/blob/master/Pics/HID2AMI.Black.Top_300.jpg) ![Image of HID2AMI-02](https://github.com/EmberHeavyIndustries/HID2AMI/blob/master/Pics/HID2AMI.Black.Bottom_300.jpg)
+
 
 ## **HOW DOES IT WORK** (in brief):
 
 HID2AMI recognizes and manages any HID device connected to its USB interface; if the device is recognized as an HID mouse, then HID2AMI starts capturing live movements and button pressings of the peripheral, then converting both of them into proper quadrature waveforms (and Amiga mouse button pressings) which can be properly understood by the Amiga itself, as if a real quadrature "Amiga" mouse was connected.
 
 If the device is recognized as an HID gamepad, then HID2AMI maps pad's controls on the Amiga Joystick port/interface.
-Gamepad's buttons are mapped evenly on Amiga button1/button2 inputs.
+Gamepad's buttons are mapped evenly on Amiga button1/button2/UP (useful for jump & racing games) inputs.
 
 There is no need to manually configure the emulation mode: device recognition and operation mode switching are automatically performed by HID2AMI itself.
 
@@ -45,8 +46,11 @@ There is no need to manually configure the emulation mode: device recognition an
 |      Baseline        | Current ver.  |                Features              |
 | -------------------- | ------------- | -------------------------------------|
 | HID2AMI BOOTLOADER   |    v1.3.0     |   Enables DFU upgrade of APP         |
-| HID2AMI APP          |    v1.6.0     |   see notes below                    |
+| HID2AMI APP          |    v1.6.2     |   see notes below                    |
   
+Features of fw v1.6.2:
+- Added mapping of UP/Forward to Gamepad 3rd button;
+- Optimized gamepad decoding core, even faster response;
 
 Features of fw v1.6.0:
 - Added support for XBOX 360 Gamepad clones;
@@ -122,9 +126,9 @@ HID2AMI hardware and firmware were designed, developed and maintained by **Sampe
 
 At first, look at a fully assembled board (please note some vacancies: not all pads shall be populated)
 
-[Reference Board: TOP](https://github.com/EmberHeavyIndustries/HID2AMI/blob/master/Pics/20190105_151759_full.jpg "Reference Board: TOP")
+[Reference Board: TOP](https://github.com/EmberHeavyIndustries/HID2AMI/blob/master/Pics/HID2AMI.Black.Top.jpg "Reference Board: TOP")
 
-[Reference Board: BOTTOM](https://github.com/EmberHeavyIndustries/HID2AMI/blob/master/Pics/20190105_151811_full.jpg "Reference Board: BOTTOM")
+[Reference Board: BOTTOM](https://github.com/EmberHeavyIndustries/HID2AMI/blob/master/Pics/HID2AMI.Black.Bottom.jpg "Reference Board: BOTTOM")
 
 #### **SCHEMATICS**
 
