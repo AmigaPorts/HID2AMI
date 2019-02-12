@@ -29,6 +29,11 @@ Gamepad's buttons are mapped evenly on Amiga button1/button2/UP (useful for jump
 
 There is no need to manually configure the emulation mode: device recognition and operation mode switching are automatically performed by HID2AMI itself.
 
+## **GETTING STARTED AND USER GUIDE**:
+
+Here you can find a quick user guide, describing basic operations and the available meta-commands for peripheral's profile customization, storage and retrieval.
+
+[HID2AMI QUICK USER GUIDE](https://github.com/EmberHeavyIndustries/HID2AMI/blob/master/Docs/Quick.User.Guide.md)
 
  ## **HW AND SCHEMATICS**
   
@@ -46,8 +51,21 @@ There is no need to manually configure the emulation mode: device recognition an
 |      Baseline        | Current ver.  |                Features              |
 | -------------------- | ------------- | -------------------------------------|
 | HID2AMI BOOTLOADER   |    v1.3.0     |   Enables DFU upgrade of APP         |
-| HID2AMI APP          |    v1.6.2     |   see notes below                    |
+| HID2AMI APP          |    v1.7.3     |   see release notes below            |
   
+
+Features of fw v1.7.3:
+- Added custom free mapping of first 4 buttons of Gamepad. By pressing 4buttons+LeftStickDown the board enters in mapping mode; pressing in turn single buttons maps them on Amiga1->Amiga2->Up->Down
+- Added custom mapping config autosave: each custom configuration is permanently stored and recalled upon Gamepad reconnection.
+- Separate permanent configs (up to 20) are saved and recalled automatically upon recognition of Gamepads brand/model
+- Added support for 12 bit high resolution gaming mice
+- Added customizable real-time mouse pointer speed adjust, by rolling the mousewheel forward/backwards
+- Added save of permanent config for mouse pointer speed, by pressing L-M-R buttons together 
+
+Features of fw v1.7.1:
+- Added mapping of DWN/backward to Gamepad 4th button. Buttons are now evenly mapped according P1->P2->UP->DWN sequence;
+- User can swap UP<->DWN button mapping by simultaneously pressing first 4 pad's buttons;
+
 Features of fw v1.6.2:
 - Added mapping of UP/Forward to Gamepad 3rd button;
 - Optimized gamepad decoding core, even faster response;
@@ -70,13 +88,16 @@ Features of fw v1.5.2:
 
 |      Device      |                Model               | HID2AMI fw version | Working |                Notes                 |     |
 | ---------------- | ---------------------------------  |----------- | ------- | -------------------------------------| --- |
-| Mice             | Any HID Compliant Mouse            |  v1.0.0    |  YES    | Any HID mouse                        |![MOU](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.HID.HP.Mouse_200.jpg)
-| Mouse            | Microsoft Intellimouse             |  v1.6.0    |  YES    | Not HID protocol compliant           |![MOU](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.Intellimouse_200.jpg)|
-| Gamepad          | Logitech Wingman Rumblepad         |  v1.3.0    |  YES    | Both digital and analog mode         |![WRP](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.Wingman.Rumblepad_200.jpg)|
+| Mice             | Any HID Compliant Mouse            |  v1.0.0    |  YES    | Any HID mouse                        |![MOU1](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.HID.HP.Mouse_200.jpg)
+| Mouse            | Microsoft Intellimouse             |  v1.6.0    |  YES    | Not HID protocol compliant           |![MOU2](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.Intellimouse_200.jpg)|
+| Gamepad          | Logitech Rumblepad 2               |  v1.3.0    |  YES    | Both digital and analog mode         |![WRP1](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.Logitech.RumblePad2_200.jpg)|
+| Gamepad          | Logitech Wingman Rumblepad         |  v1.3.0    |  YES    | Both digital and analog mode         |![WRP2](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.Wingman.Rumblepad_200.jpg)|
 | Gamepad          | PS3/PC Clones                      |  v1.5.2    |  YES    | Both digital and analog mode         |![PS3CLONE](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.PS3.Clone_200.jpg)|
-| Gamepad          | Thrustmaster Firestorm Digital     |  v1.3.0    |  YES    | Pad is digital only                  |![THFS](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.Thrustmaster.Firestorm_200.jpg)|
+| Gamepad          | SNES Usb Clone                     |  v1.3.0    |  YES    | Pad is digital only                  |![THFS1](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.SNES.CLONE_200.jpg)|
+| Gamepad          | Thrustmaster Firestorm Digital     |  v1.3.0    |  YES    | Pad is digital only                  |![THFS2](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.Thrustmaster.Firestorm_200.jpg)|
 | Gamepad          | Thrustmaster Wireless dual trigger |  v1.3.0    |  YES    | Both digital and analog mode         |![THWD](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.Thrustmaster.Wireless_200.jpg)|
-| Gamepad          | XBOX 360 Clone                     |  v1.6.0    | YES     | Not HID protocol compliant           |![XBOX](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.XBOX.360_200.jpg) |
+| Gamepad          | XBOX 360 Clone                     |  v1.6.0    |  YES    | Not HID protocol compliant           |![XBOX](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.XBOX.360_200.jpg) 
+| Gamepad          | XBOX Elite                         |  future    |  NO     | Not HID protocol compliant           |![XBOXE](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.XBOX.Elite_200.jpeg)
 
 ## **DEVELOPMENT**
 
@@ -141,6 +162,16 @@ At first, look at a fully assembled board (please note some vacancies: not all p
 [Reference Layout v1.0.0 Bottom](https://github.com/EmberHeavyIndustries/HID2AMI/blob/master/Board/HID2AMI.Deluxe.Rev1.0.0.redist.layout.bottom.pdf)
 
 #### **BILL OF MATERIALS**
+
+Components noted as "Optional" fulfil the general purpose STM32F1x reference design; generally speaking they can be safely omitted from the assembly of HID2AMI. Consider soldering any of them in case you experience some instability of any kind (never experienced so far).
+
+LED1 is "run mode" indicator; it blinks at variable rates to indicate HID2AMI running status (suggesetd colors: green, yellow, white)
+- When in BOOTLOADER mode, a fast blink means bootloader running and waiting for the "App" to be flashed/upgraded
+- When in APP mode, a "regular" blinking means the App is running and waiting for input; a slower blinking (upon connecting a peripheral), means the peripheral correctly identified and mapped 
+
+LED2 is the "power on" indicator; if lit then your board gets correct +5V and +3.3V power supply 
+
+For both LED1 and LED2, the suggested value for their respective limiting current resistors is 10k, but you can safely experiment any value in range 1k-47k depending on the led components characteristics and light efficiency (and your personal taste)
 
 |Part   |   Value  |     Device       |  Package   |   Note   | 
 |-------|--------- |------------------|------------|----------|
@@ -217,35 +248,10 @@ Current BOOTLOADER version is 1.3.0. You can freely get it from here [HID2AMIBOO
 
 ### **FLASHING INSTRUCTIONS**
 
-#### **PREREQUISITES**
-In order to be able to flash both the bootloader and the HID2AMI app, you need:
-- A MS-Windows PC
-- An A-A USB cable (https://www.google.com/search?q=a-a+usb+cable)
-- The free ST DFU Tools. Download the package from here (https://www.st.com/en/development-tools/stsw-stm32080.html)
+Detailed flashing instructions, and how to get your personal HID2AMI board code, can be found here, for both Linux (courtesy by Sukkopera) and Windows:
 
-#### **FLASHING THE BOOTLOADER**
-- Install the ST DFU Tool package on your Windows machine. Make sure you have the ST DFU-USB driver installed (in case something went wrong, you can manually install them from the DFU Tool's directory)
-- Set HID2AMI in DFU-BOOT mode, by selecting position 2-3 for both "BOOT0" and "PA9BOOT" jumpers
-- MAKE SURE THAT HID2AMI IS NOT CONNECTED TO YOUR AMIGA MOUSE/JOY PORT
-- Connect HID2AMI to any USB port of your PC, by mean of the A-A USB Cable
-- After few seconds, HID2AMI should be recognized by Windows as "ST Device in DFU Mode"
-- Launch "DfuSeDemo" App from ST Tools package. You should see a form like this one, showing your HID2AMI has booted in DFU mode and has been recognized properly ![DFU-BOOT](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/50-01.Dfu.Boot.jpg)
-- Select the HID2AMIBOOTLOADER.dfu file you previosly downloaded from [here](https://github.com/EmberHeavyIndustries/HID2AMI/blob/master/Firmware/HID2AMIBOOTLOADER.dfu) by pressing "Choose" under "Upgrade or Verify Action". 
-You should come to a condition like this          ![DFU-BOOT-INJECT](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/50-02.Dfu.Bootloader.inject.jpg)
-- Press "Upgrade" button and waity the process to finish with success.
+[HID2AMI FLASHING INSTRUCTIONS](https://github.com/EmberHeavyIndustries/HID2AMI/blob/master/Docs/Flashing.Instructions.md)
 
-#### **RETRIEVING YOUR PERSONAL BOARD CODE**
-If everything went fine, your board now can boot from the BOOTLOADER and is ready to be loaded with the HID2AMI App
-- Set HID2AMI in BOOTLOADER mode, by selectin position 1-2 for "BOOT0" and position 2-3 for "PA9BOOT"
-- MAKE SURE THAT HID2AMI IS NOT CONNECTED TO YOUR AMIGA MOUSE/JOY PORT
-- Connect HID2AMI to any USB port of your PC, by mean of the A-A USB Cable: the bootloader should take control, and you should see the activity led on board (lower led near usb connector) fastly blinking
-- Look at DfuSeDemo window: you should see something like as follows. Note down the four characters you see near "Version" field ![DFU-BOOTLOADED](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/50-03.HID2AMI.Dfu.codeget.jpg)
-- In order to get a properly signed app, working tied to your board, you have to ask it from the author, by sending him an [email](mailto:EmberHEavyIndustries@gmail.com) together with your personal code, which is the four character as above (in the case of the picture is "D530", yours should obviously be different)
-
-#### **FLASHING THE HID2AMI APP**
-- Once received your personalized app file, in the form "HID2AMIAPP.XXXX.dfu", boot again HID2AMI in BOOTLOADER mode (just as above), "Choose" the app file "HID2AMIAPP.XXXX.dfu" and press "Upgrade" ![DFU-LOADAPP](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/50-04.HID2AMI.Dfu.App.Inject.jpg)
-- You're done ! Put the HID2AMI board in APP mode by by selecting position 1-2 for both "BOOT0" and "PA9BOOT" jumpers, **DISCONNECT you HID2AMI board from your Windows PC** and connect it to any Mouse/Joy port of your Amiga
-- Enjoy !
 
 ## **LICENSE TERMS**
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
