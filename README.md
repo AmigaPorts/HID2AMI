@@ -19,12 +19,8 @@ Donors of at least 5 EUR will receive the latest firmware revision available at 
 [HOW TO SUBMIT AN HID DUMP ](https://github.com/EmberHeavyIndustries/HID2AMI/blob/master/Docs/hid.dump.howto.md)
 
 
-
-## **REV 1.0 board** 
-![Image of HID2AMI-01](https://github.com/EmberHeavyIndustries/HID2AMI/blob/master/Pics/HID2AMI.v1.0.0-1-300.jpg) ![Image of HID2AMI-02](https://github.com/EmberHeavyIndustries/HID2AMI/blob/master/Pics/HID2AMI.v1.0.0-2-300.jpg) ![Image of HID2AMI-02](https://github.com/EmberHeavyIndustries/HID2AMI/blob/master/Pics/HID2AMI.Black.Top_300.jpg) ![Image of HID2AMI-02](https://github.com/EmberHeavyIndustries/HID2AMI/blob/master/Pics/HID2AMI.Black.Bottom_300.jpg)
-
 ## **REV 1.1 board** 
-![Image of HID2AMI-03](https://github.com/EmberHeavyIndustries/HID2AMI/blob/master/Pics/20190321_082422_025.jpg)![Image of HID2AMI-04](https://github.com/EmberHeavyIndustries/HID2AMI/blob/master/Pics/20190321_082504_025.jpg)
+![Image of HID2AMI-03](https://github.com/EmberHeavyIndustries/HID2AMI/blob/master/Pics/Hid2AMI_Rev1.1.3D_10.jpg)![Image of HID2AMI-04](https://github.com/EmberHeavyIndustries/HID2AMI/blob/master/Pics/Hid2AMI_Rev1.1.top_10.jpg)![Image of HID2AMI-05](https://github.com/EmberHeavyIndustries/HID2AMI/blob/master/Pics/Hid2AMI_Rev1.1.bottom_10.jpg)
 
 ## **HOW DOES IT WORK** (in brief):
 
@@ -58,11 +54,14 @@ Here you can find a quick user guide, describing basic operations and the availa
 |      Baseline        | Current ver.  |                Features              |
 | -------------------- | ------------- | -------------------------------------|
 | HID2AMI BOOTLOADER   |    v1.3.0     |   Enables DFU upgrade of APP         |
-| HID2AMI APP          |    v1.8.7     |   see release notes below            |
+| HID2AMI APP          |    v1.8.8     |   see release notes below            |
  
  
  
- 
+Features of fw v1.8.8:
+- Added support for Trust IVY 18519 Wireless Mouse
+- Added support for Logitech M305 BT Wireless Mouse
+
 Features of fw v1.8.7:
 - Added support for Logitech MX510 MX518 G305 G203 G403 G603 G703 G903 gaming mice
 - Added support for SteelSeriec Rival 110 and 600 Gaming mice
@@ -142,19 +141,25 @@ Thanks !
 |      Device      |                Model               | Min required fw ver. | Working |                Notes                 |     |
 | ---------------- | ---------------------------------  |----------- | ------- | -------------------------------------| --- |
 | Mice             | Any HID Compliant Mouse            |  v1.0.0    |  YES    | Any HID mouse                        |![MOU1](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.HID.HP.Mouse_200.jpg)|
+| Mouse            | Logitech B100                      |  v1.0.0    |  YES    |                                      |![MOUF](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.Logitech.B100_200.jpg)|
 | Mouse            | Logitech G5   Gaming Mouse         |  v1.8.6    |  YES    |                                      |![MOU7](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.Logitech.G5_200.jpg)|
 | Mouse            | Logitech G502 Gaming Mouse         |  v1.8.6    |  YES    |                                      |![MOU6](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.Logitech.G502_200.jpg)|
 | Mouse            | Logitech G Pro Gaming Mouse        |  v1.8.6    |  YES    |                                      |![MOU8](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.Logitech.GPro_200.jpg)|
-| Mouse            | Logitech MX510 MX518 G305 G203 G403 G603 G703 G903        |  v1.8.7    |  YES    |                                      |![MOUD](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.logitech.gmice_200.jpg)|
-| Mouse            | Logitech Wireless Mouse M560       |  v1.7.4    |  YES    |                                      |![MOU3](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.Logitech.M560_200.jpg)|
+| Mouse            | Logitech MX510 MX518 G305 G203 G300 G403 G603 G703 G903 RX250       |  v1.8.7    |  YES    |                                      |![MOUD](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.logitech.gmice_200.jpg)|
+| Mouse            | Logitech Performance MX BT         |  v1.8.7    |  YES    |                                      |![MOU10](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.Logitech.Performance.MX_200.jpg)|
+| Mouse            | Logitech Wireless Mouse M220, M305, M560    |  v1.7.4    |  YES    |                                      |![MOU3](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.Logitech.M560_200.jpg)|
 | Mouse            | Logitech Wireless Mouse M590       |  v1.8.4    |  YES    |                                      |![MOU4](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.Logitech.M590_200.jpg)|
-| Mouse            | Microsoft Intellimouse             |  v1.6.0    |  YES    | Not 100% HID protocol compliant      |![MOU2](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.Intellimouse_200.jpg)|
+| Mouse            | Logitech Wireless Mouse Mx Master  |  v1.8.4    |  YES    |                                      |![MOUD](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.logitech-mx-master_200.jpg)|
+| Mouse            | Microsoft Intellimouse             |  v1.6.0    |  YES    | Not 100% HID protocol compliant      |![MOU2](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.Intellimouse_200.jpg)| 
 | Mouse            | Microsoft Intellimouse Explorer    |  v1.8.4    |  YES    | Wireless explorer series             |![MOU5](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.Microsoft.Intellimouse.Explorer_200.jpg)|
+| Mouse            | Microsoft Wireless Laser 6000, 7000|  v1.8.4    |  YES    | Wireless explorer series             |![MOUD](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.MS.Laser.mouse.6000_200.jpg)|
+| Mouse            | Rapoo 7100P  Wireless Mouse        |  v1.8.6    |  YES    |                                      |![MOUE](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.Rapoo.Wireless_200.jpg)|
 | Mouse            | Steelseries Rival 100 and 110      |  v1.8.6    |  YES    |                                      |![MOU9](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.Steelseries.Rival.100_200.jpg)|
 | Mouse            | Steelseries Rival 310              |  v1.8.6    |  YES    |                                      |![MOUA](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.Steelseries.Rival.310_200.jpg)|
 | Mouse            | Steelseries Rival 500              |  v1.8.6    |  YES    |                                      |![MOUB](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.Steelseries.Rival.500_200.jpg)|
 | Mouse            | Steelseries Rival 600              |  v1.8.7    |  YES    |                                      |![MOUC](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.Steelseries.Rival.600_200.jpg)|
 | Mouse            | Targus Mini Mouse                  |  v1.7.4    |  YES    | Not 100% HID protocol compliant      |![MOU4](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.Targus.Mouse.Mini_200.jpg)|
+| Mouse            | Trust Wireless 18519 YVI           |  v1.8.8    |  YES    |                                      |![MOU11](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.Trust.18519.Wireless_200.jpg)|
 | Joystick         | Arcade Stick w/ USB encoder        |  v1.3.0    |  YES    | Stick is digital only                |![ARC1](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.Arcade.stick_200.jpg)|
 | Joystick         | C64 Mini Stick                     |  v1.3.0    |  YES    | Stick is digital only                |![C641](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.Joystick.C64.Mini_200.jpg)|
 | Gamepad          | Dual Stick China Clone             |  v1.3.0    |  YES    | Both digital and analog mode         |![CHN1](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.DualStick.Chinese_200.jpg)|
@@ -168,13 +173,15 @@ Thanks !
 | Gamepad          | Logitech Wingman Rumblepad         |  v1.3.0    |  YES    | Both digital and analog mode         |![WRP2](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.Wingman.Rumblepad_200.jpg)|
 | Gamepad          | Logitech Wireless Gamepad F710     |  v1.8.0    |  YES    | Both PC and XBOX 360 mode            |![WRP4](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.Logitech.Wireless.Gamepad.F710_200.jpg)|
 | Gamepad          | PS3/PC Clones                      |  v1.5.2    |  YES    | Both digital and analog mode         |![PS3CLONE](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.PS3.Clone_200.jpg)|
+| Gamepad          | RetroLink Classic Controller USB   |  v1.8.0    |  YES    | (Sega Saturn Style)                  |![SEGASAT](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.retrolink.classic_200.jpg)|
 | Joystick         | SEGA VirtuaStick High Grade        |  v1.8.0    |  YES    | PS3 mode - Stick is digital only     |![SEG1](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.VirtuaStickHighGrade_200.jpg)|
 | Gamepad          | Sony PS1 original pad              |  v1.6.0    |  YES    | With USB adapter                     |![THFS3](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.Sony.PS1.PAD_200.jpg)|
 | Gamepad          | Sony PS2 original pad              |  v1.6.0    |  YES    | With USB adapter                     |![THFS5](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.Sony.PS2_200.jpg)|
 | Gamepad          | Sony PS2 original pad              |  v1.8.1    |  YES    | With DUAL USB adapter (1)            |![THFS7](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.PS2.Dual.Adaptor.jpg)|
 | Gamepad          | Sony PS-ONE original pad           |  v1.6.0    |  YES    | With USB adapter                     |![THFS6](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.Sony.PSONE.PAD_200.jpg)|
-| Gamepad          | Sony Dual Shock 4 PS4 original pad |  v1.8.0    |  YES    | **WARNING !! (2)                     |![SDS4](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.SONY.DS4.ORIGINAL_200.jpg)|
+| Gamepad          | Sony Dual Shock 4 PS4 original pad |  v1.8.0    |  YES    | **WARNING !! (2)**                   |![SDS4](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.SONY.DS4.ORIGINAL_200.jpg)|
 | Gamepad          | SNES Usb Clone                     |  v1.3.0    |  YES    | Pad is digital only                  |![THFS4](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.SNES.CLONE_200.jpg)|
+| Joystick         | Speedlink Competition PRO USB      |  v1.8.0    |  YES    |                                      |![SLNK1](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.SPEEDLINK_200.jpg)|
 | Gamepad          | Thrustmaster Firestorm Digital     |  v1.3.0    |  YES    | Pad is digital only                  |![THFS2](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.Thrustmaster.Firestorm_200.jpg)|
 | Gamepad          | Thrustmaster Wireless dual trigger |  v1.3.0    |  YES    | Both digital and analog mode         |![THWD](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.Thrustmaster.Wireless_200.jpg)|
 | Gamepad          | XBOX 360 Clone                     |  v1.6.0    |  YES    | Not HID protocol compliant           |![XBOX](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.XBOX.360_200.jpg) 
