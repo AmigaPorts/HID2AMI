@@ -24,11 +24,11 @@ Donors of at least 5 EUR will receive the latest firmware revision available at 
 
 
 ## **REV 1.1 board** 
-![Image of HID2AMI-03](https://github.com/EmberHeavyIndustries/HID2AMI/blob/master/Pics/Hid2AMI_Rev1.1.3D_10.jpg)![Image of HID2AMI-04](https://github.com/EmberHeavyIndustries/HID2AMI/blob/master/Pics/Hid2AMI_Rev1.1.top_10.jpg)![Image of HID2AMI-05](https://github.com/EmberHeavyIndustries/HID2AMI/blob/master/Pics/Hid2AMI_Rev1.1.bottom_10.jpg)
+![Image of HID2AMI-03](https://github.com/EmberHeavyIndustries/HID2AMI/blob/master/Pics/aa.01.jpg)![Image of HID2AMI-04](https://github.com/EmberHeavyIndustries/HID2AMI/blob/master/Pics/aa.02.jpg)![Image of HID2AMI-05](https://github.com/EmberHeavyIndustries/HID2AMI/blob/master/Pics/aa.03.jpg)
 
-## **NEW !! GothDevil's Open source shell case** 
+## **GothDevil's Open source shell case** 
 
-#### Thanks to the talented and friendly user **GothDevil**, each HID2AMI user can now 3D-print his own shell cases !
+#### Thanks to the talented and friendly user **GothDevil** for creating and sharing her precious work  !
 
 You are free to download the stl/step files linked below, and print your own copy of this beautiful shell cover !
 
@@ -47,8 +47,19 @@ Please send donations to GothDevil's paypal account here:
 | [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://paypal.me/HID2AMIBOX)||Thank you GothDevil !|
 | ------------------------------ | ---------------------------------------------- | --------------------------- |
 
+## **Lemaru's Open source shell case** 
+
+#### Thanks to the talented and friendly user **Lemaru** for creating and sharing his precious work  !
+!
+
+You are free to download the stl/step files linked below, and print your own copy of this beautiful shell cover !
+
+![Image of BOX-01](https://github.com/EmberHeavyIndustries/HID2AMI/blob/master/Pics/77.Lemaru_shell_350.jpg)
 
 
+[ShellBox Top](https://github.com/EmberHeavyIndustries/HID2AMI/blob/master/Docs/HID2AMI_Top.stl)
+
+[Shellbox Bottom](https://github.com/EmberHeavyIndustries/HID2AMI/blob/master/Docs/HID2AMI_Bottom.stl)
 
 
 
@@ -82,12 +93,14 @@ Thanks !
 |      Device      |                Model               | Min required fw ver. | Working |                Notes                 |     |
 | ---------------- | ---------------------------------  |----------- | ------- | -------------------------------------| --- |
 | Mice             | Any HID Compliant Mouse            |  v1.0.0    |  YES    | Any HID mouse                        |![MOU1](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.HID.HP.Mouse_200.jpg)|
+| Mouse            | Anker Ergonomic Vertical Mouse     |  v1.8.4    |  YES    |                                      |![ANKERA](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.Anker_Ergonomic_200.jpg)|
 | Mouse            | Labtec Optical Mouse 600           |  v1.8.4    |  YES    |                                      |![MOULA](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.Labtec.Optica.Mouse.600_200.jpg)|
 | Mouse            | Logitech B100                      |  v1.0.0    |  YES    |                                      |![MOUF](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.Logitech.B100_200.jpg)|
 | Mouse            | Logitech G5   Gaming Mouse         |  v1.8.6    |  YES    |                                      |![MOU7](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.Logitech.G5_200.jpg)|
 | Mouse            | Logitech G502 Gaming Mouse         |  v1.8.6    |  YES    |                                      |![MOU6](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.Logitech.G502_200.jpg)|
 | Mouse            | Logitech G Pro Gaming Mouse        |  v1.8.6    |  YES    |                                      |![MOU8](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.Logitech.GPro_200.jpg)|
 | Mouse            | Logitech MX510 MX518 G305 G203 G300 G403 G603 G703 G903 RX250       |  v1.8.7    |  YES    |     |![MOUD](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.logitech.gmice_200.jpg)|
+| Mouse            | Logitech M-BT83 Wired Mouse        |  v1.9.2    |  YES    |                                      |![MOULO2](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.Logitech.M-BT83_200.jpg)|
 | Mouse            | Logitech Performance MX BT         |  v1.8.7    |  YES    |                                      |![MOU10](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.Logitech.Performance.MX_200.jpg)|
 | Mouse            | Logitech Wireless Mouse M220, M305, M560    |  v1.7.4    |  YES    |                             |![MOU3](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.Logitech.M560_200.jpg)|
 | Mouse            | Logitech Wireless Mouse M590       |  v1.8.4    |  YES    |                                      |![MOU4](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.Logitech.M590_200.jpg)|
@@ -104,6 +117,7 @@ Thanks !
 | Mouse            | Targus Mini Mouse                  |  v1.7.4    |  YES    | Not 100% HID protocol compliant      |![MOU4](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.Targus.Mouse.Mini_200.jpg)|
 | Mouse            | Trust Wireless 18519 YVI           |  v1.8.8    |  YES    |                                      |![MOU11](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.Trust.18519.Wireless_200.jpg)|
 | Mouse            | Yenkee YMS 3007                    |  v1.8.4    |  YES    |                                      |![MOULY](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.Yenkee.yms.3007_200.jpg)|
+| Gamepad          | 8bitd0 SFC30 Bluetooth             |  v1.8.0    |  YES    |                                      |![(BITD=](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.8bitdo.200.jpg)|
 | Joystick         | Arcade Stick w/ USB encoder        |  v1.3.0    |  YES    | Stick is digital only                |![ARC1](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.Arcade.stick_200.jpg)|
 | Joystick         | C64 Mini Stick                     |  v1.3.0    |  YES    | Stick is digital only                |![C641](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.Joystick.C64.Mini_200.jpg)|
 | Gamepad          | Dual Stick China Clone             |  v1.3.0    |  YES    | Both digital and analog mode         |![CHN1](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.DualStick.Chinese_200.jpg)|
@@ -118,6 +132,7 @@ Thanks !
 | Gamepad          | Logitech Wireless Gamepad F710     |  v1.8.0    |  YES    | Both PC and XBOX 360 mode            |![WRP4](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.Logitech.Wireless.Gamepad.F710_200.jpg)|
 | Gamepad          | PS3/PC Clones                      |  v1.5.2    |  YES    | Both digital and analog mode         |![PS3CLONE](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.PS3.Clone_200.jpg)|
 | Gamepad          | RetroLink Classic Controller USB   |  v1.8.0    |  YES    | (Sega Saturn Style)                  |![SEGASAT](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.retrolink.classic_200.jpg)|
+| Gamepad          | SEGA Mega Drive Mini USB Pad       |  v1.9.1    |  YES    |                                      |![SEG2](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.sega_mega_drive_mini.jpg)|
 | Joystick         | SEGA VirtuaStick High Grade        |  v1.8.0    |  YES    | PS3 mode - Stick is digital only     |![SEG1](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.VirtuaStickHighGrade_200.jpg)|
 | Gamepad          | Sony PS1 original pad              |  v1.6.0    |  YES    | With USB adapter                     |![THFS3](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.Sony.PS1.PAD_200.jpg)|
 | Gamepad          | Sony PS2 original pad              |  v1.6.0    |  YES    | With USB adapter                     |![THFS5](https://raw.githubusercontent.com/EmberHeavyIndustries/HID2AMI/master/Pics/66.Sony.PS2_200.jpg)|
@@ -153,20 +168,30 @@ Thanks !
   
 |      Baseline        | Current ver.  |                Features              |
 | -------------------- | ------------- | -------------------------------------|
-| HID2AMI BOOTLOADER   |    v1.3.1     |   Enables DFU upgrade of APP         |
-| HID2AMI APP          |    v1.9.0     |   see release notes below            |
+| HID2AMI BOOTLOADER   |    v1.4.0     |   Enables DFU upgrade of APP         |
+| HID2AMI OEM BOOTLOADER   |    v1.4.0     |   Enables DFU upgrade of APP         |
+| HID2AMI APP          |    v1.9.2     |   see release notes below            |
  
  
-  Features of fw v1.9.0:
+Features of fw v1.9.2:
+  - Added support for Logitech M-BT83 Wired Mouse 
+   
+Features of fw v1.9.1:
+  - Added support for SEGA Mega Drive Mini USB Adapters 
+
+Features of fw v1.9.0:
   - Added support for HID keyboards with "WADS" mapping 
- 
- Features of fw v1.8.c:
+
+Features of fw v1.8.c:
   - Added support for Microsoft Classic Intellimouse 2018 
-  Features of fw v1.8.b:
+
+Features of fw v1.8.b:
   - Added support for Sony PS3 Dualshock3 PAD
-  Features of fw v1.8.a:
+
+Features of fw v1.8.a:
   - Fixed a stupid bug which prevented 16-bit-axis mice to be correctly managed
-  Features of fw v1.8.9:
+
+Features of fw v1.8.9:
  - Changed mousewheel behaviour: 
    - 1. Defaults to no action [hint: probably adding freemouse support in one of next updates]
    - 2. Pressing all three mouse buttons together, board enters "pointer speed setting" mode [Led stops blinking->firmly lit]
@@ -351,7 +376,7 @@ For both LED1 and LED2, the suggested value for their respective limiting curren
 
 ### **BOOTLOADER**
 
-Current BOOTLOADER version is 1.3.1. You can freely get it from here [HID2AMIBOOTLOADER](https://github.com/EmberHeavyIndustries/HID2AMI/blob/master/Firmware/HID2AMIBOOTLOADER.dfu)
+Current BOOTLOADER version is 1.4.0. You can freely get it from here [HID2AMIBOOTLOADER](https://github.com/EmberHeavyIndustries/HID2AMI/blob/master/Firmware/HID2AMIBOOTLOADER.dfu)
 
 
 ### **FLASHING INSTRUCTIONS**
